@@ -34,7 +34,7 @@ __You need Maven with Java 8__
   * cd xyz/json-to-cto
   *  mvn test
  
-  If the JSON file is valid and does break the tool will generate a file with extension .cto at:  xyz/json-to-cto/target/test-classes/Json/Payload 
+  If the JSON file is valid and does not break the tool will generate a file with extension .cto at:  xyz/json-to-cto/target/test-classes/Json/Payload 
  ## Debugging ##
  There is a log42j.properties file in the xyz/json-to-cto/scr/test/resources, which the debugging level is set to TRACE by default. It can be changed to DEBUG (less verbose) and INFO (not verbose). Output will be directed to console
  
