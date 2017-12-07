@@ -24,7 +24,7 @@ __You need Maven with Java 8__
  *  Clone repository in a folder, called xyz later on
  *  cd xyz/json-to-cto
  *  mvn install
- *  After successful test you will see 5 JSON and corresponding CTO files  under xyz/json-to-cto/target/test-classes.
+ *  After successful test you will see 5 JSON and corresponding CTO files  under xyz/json-to-cto/target/test-classes/Json/Payload .
  *  TwitterGetUser.josn is different from others because it starts as a JSON array and not a JSON object
  
  ## Use it as a tool ##
