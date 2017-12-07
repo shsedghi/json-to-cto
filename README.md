@@ -36,5 +36,5 @@ __You need Maven with Java 8__
  
   If the JSON file is valid and does not break the tool will generate a file with extension .cto at:  xyz/json-to-cto/target/test-classes/Json/Payload 
  ## Debugging ##
- There is a log42j.properties file in the xyz/json-to-cto/scr/test/resources, which the debugging level is set to INFO (not verbose) by default. It can be changed to DEBUG (less verbose) and INFO (very verbose). Output will be directed to System out(console)
+ There is a log42j.properties file in the xyz/json-to-cto/scr/test/resources, which the debugging level is set to INFO (not verbose) by default. It can be changed to DEBUG (less verbose) and TRACE (very verbose). Output will be directed to System out(console)
  
