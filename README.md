@@ -1,4 +1,4 @@
-# JSON Payload Importer for Hyperledger Composer
+# JSON Payload Importer for Hyperledger Composer   
 This tool imports a JSON payload (aka. Document) and creates a CTO file, which is the Fabric Composer modeling language. The CTO file comprised of cto artifacts ("concept" only at this stage) from JSON objects and arrays.
 
 ## Type interchange ##
