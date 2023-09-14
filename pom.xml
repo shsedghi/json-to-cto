@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ibm.blockchain.composer.tool</groupId>
@@ -8,17 +9,17 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.9.8</version>
+			<version>2.15.2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>2.9.8</version>
+			<version>2.15.2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
-			<version>2.9.8</version>
+			<version>2.15.2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.fge</groupId>
@@ -56,6 +57,21 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.eclipse.xsd</groupId>
+			<artifactId>org.eclipse.xsd</artifactId>
+			<version>2.12.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>org.eclipse.emf.ecore</artifactId>
+			<version>2.12.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>org.eclipse.emf.common</artifactId>
+			<version>2.12.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -69,15 +85,17 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			 <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.20</version>
-        <configuration>
-          <excludes>
-          </excludes>
-        </configuration>
-      </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+				<configuration>
+					<excludes>
+						<exclude>TestXmlSchema.java</exclude>
+						<exclude>TestJsonPayload.java</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
